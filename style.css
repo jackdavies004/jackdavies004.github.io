@@ -24,7 +24,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #666;
+  color: #ffffff;
   font-weight: 500;
   margin-right: 25px;
   font-size: 1.1rem;
@@ -32,11 +32,11 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #005bb5;
+  color: #ffffff;
 }
 
 .nav-links a.active {
-  color: #111;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -47,20 +47,20 @@ main {
 
 h1 {
   font-size: 2.5rem;
-  color: #111;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 h2 {
   font-size: 1.5rem;
-  color: #555;
+  color: #ffffff;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
 h3 {
   font-size: 1.3rem;
-  color: #222;
+  color: #ffffff;
   margin-bottom: 15px;
   border-bottom: 2px solid #005bb5;
   display: inline-block;
@@ -83,7 +83,7 @@ p {
 
 .cv-item h4 {
   font-size: 1.2rem;
-  color: #111;
+  color: #ffffff;
 }
 
 .cv-item ul {
@@ -102,7 +102,7 @@ p {
 }
 
 a {
-  color: #005bb5;
+  color: #ffffff;
   text-decoration: none;
 }
 
