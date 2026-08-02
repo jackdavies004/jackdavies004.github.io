@@ -176,7 +176,7 @@ a:hover {
 /* The Images themselves */
 .side-img {
   width: 100%;
-  max-width: 275px; /* Increased by 25% */
+  max-width: 300px; /* Increased by 25% */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
