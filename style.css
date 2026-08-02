@@ -236,9 +236,9 @@ a:hover {
 
 .projects-grid {
   display: grid;
-  /* This magic line makes the cards arrange themselves side-by-side on desktop, and stack on mobile automatically! */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr; /* This forces the cards to stack neatly in a single column */
   gap: 25px;
+  margin-bottom: 40px;
 }
 
 .project-card {
