@@ -148,19 +148,51 @@ a:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adds a subtle drop shadow so the pages pop off the dark background */
 }
 
-.image-banner {
+/* --- 3-Column Magazine Layout --- */
+
+.three-column-layout {
   display: flex;
   justify-content: space-between;
-  gap: 15px;
-  margin: 20px 0 40px 0;
-  /* This ensures that if the screen is too small (like a phone), users can swipe left/right to see all photos! */
-  overflow-x: auto; 
-  padding-bottom: 10px;
+  align-items: flex-start;
+  gap: 30px; /* Space between the columns */
+  margin-top: 30px;
 }
 
-.banner-img {
-  height: 220px; /* Locks all images to the exact same height for a clean look */
-  width: auto;   /* Keeps the natural aspect ratio so faces don't stretch */
-  border-radius: 8px; /* Smooth, rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow against your dark background */
+/* The Image Margins */
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1; /* Tells the image columns to take up 1 unit of space */
+}
+
+/* The Middle Text */
+.text-column {
+  flex: 2; /* Tells the text to take up DOUBLE the space of an image column */
+}
+
+/* The Images themselves */
+.side-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Nice shadow for your dark background */
+}
+
+/* Mobile Protection - Stacks everything vertically on small screens */
+@media (max-width: 800px) {
+  .three-column-layout {
+    flex-direction: column;
+  }
+  
+  .image-column {
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .side-img {
+    max-width: 200px;
+  }
 }
