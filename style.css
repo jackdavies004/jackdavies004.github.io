@@ -217,4 +217,52 @@ a:hover {
   .side-img {
     max-width: 200px;
   }
+
+/* --- Projects Section --- */
+
+.projects-section {
+  margin-top: 70px;
+  padding-top: 40px;
+  border-top: 1px solid #332266; /* Adds a subtle divider line below your about me */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  border-bottom: none;
+}
+
+.projects-grid {
+  display: grid;
+  /* This magic line makes the cards arrange themselves side-by-side on desktop, and stack on mobile automatically! */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background-color: #231265; /* A slightly lighter blue than your background to make them pop */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Makes the card "float" up slightly when a mouse hovers over it */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+.project-card h4 {
+  color: #66aaff; /* A light blue to draw the eye to the project title */
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+  
 }
