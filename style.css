@@ -161,15 +161,15 @@ a:hover {
 .image-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-around; /* This perfectly spreads the images out vertically! */
-  align-items: center; /* Centers the images neatly in their column */
-  flex: 1; /* Keeps the columns proportional */
+  justify-content: space-around;
+  align-items: center;
+  flex: 1.5; /* CHANGED FROM 1: This makes the side columns wider */
   gap: 30px; 
 }
 
 /* The Middle Text */
 .text-column {
-  flex: 2.5; /* Gives the text slightly more space so it isn't squished */
+  flex: 2; /* CHANGED FROM 2.5: This balances the text column with the new wider images */
   padding: 0 20px;
 }
 
