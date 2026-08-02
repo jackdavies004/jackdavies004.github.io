@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack | Platformer Demo</title>
+  <link rel="stylesheet" href="style.css?v=8">
+</head>
+<body>
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">Homepage</a>
+      <a href="resume.html">CV</a>
+      <a href="demo.html" class="active">Game Demo</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
+  <main>
+    <header class="hero">
+      <h1>Python Platformer</h1>
+      <h2>A-Level Computer Science Project</h2>
+    </header>
+
+    <section class="content text-column" style="margin: 0 auto; max-width: 800px; padding: 20px;">
+      <h3>About the Game</h3>
+      <p>This is a Mario-style platformer game I developed entirely in Python for my A-Level Computer Science coursework.</p>
+      
+      <p><strong>Year:</strong> 2023<br>
+      <strong>Grade Achieved:</strong> 67/70 (Accounting for 20% of my final A-Level grade)</p>
+
+      <p><em>Use the interactive window below to play the game directly in your browser! Click inside the game window to enable the controls.</em></p>
+
+      <!-- The playable game window linking to your Pygbag folder -->
+      <div id="game-container" style="margin-top: 40px; text-align: center;">
+          <iframe 
+            src="platformer/index.html" 
+            width="800" 
+            height="550" 
+            frameborder="0" 
+            scrolling="no"
+            style="border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.5); background-color: #000;">
+          </iframe>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
