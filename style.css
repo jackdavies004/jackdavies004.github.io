@@ -152,7 +152,7 @@ a:hover {
 .three-column-layout {
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* Helps the columns match height so images can spread out */
+  align-items: stretch; 
   gap: 20px; 
   margin-top: 30px;
 }
@@ -162,27 +162,36 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  flex: 1.5; /* CHANGED FROM 1: This makes the side columns wider */
+  flex: 1; 
   gap: 30px; 
+}
+
+/* Pushes the left pictures to the far left */
+.image-column:first-child {
+  align-items: flex-start;
+}
+
+/* Pushes the right pictures to the far right */
+.image-column:last-child {
+  align-items: flex-end;
 }
 
 /* The Middle Text */
 .text-column {
-  flex: 2; /* CHANGED FROM 2.5: This balances the text column with the new wider images */
-  padding: 0 20px;
+  flex: 2; 
+  padding: 0 50px; /* Pushes the text nicely away from the images */
 }
 
 /* The Images themselves */
 .side-img {
   width: 100%;
-  max-width: 350px; /* Increased by 25% */
+  max-width: 350px; /* MASSIVE INCREASE: Allows them to truly fill the new space */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
 }
 
-/* Mobile Protection - Stacks everything vertically on small screens */
+/* Mobile Protection */
 @media (max-width: 800px) {
   .three-column-layout {
     flex-direction: column;
@@ -191,12 +200,21 @@ a:hover {
   .image-column {
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap; /* Allows images to drop to the next line on small phones */
+    flex-wrap: wrap; 
     width: 100%;
     padding-bottom: 10px;
   }
+  
+  .image-column:first-child,
+  .image-column:last-child {
+    align-items: center;
+  }
+
+  .text-column {
+    padding: 0; /* Removes the extra padding on small phones */
+  }
 
   .side-img {
-    max-width: 180px; /* Slightly smaller for mobile */
+    max-width: 200px;
   }
 }
