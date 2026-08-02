@@ -109,3 +109,41 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* --- CV Page Specific Styles --- */
+
+.cv-download-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #16084d; /* Matches your dark blue background for contrast */
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #cccccc;
+  text-decoration: none;
+}
+
+.cv-images-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* This creates the perfect gap between the two pages */
+}
+
+.cv-image {
+  width: 100%;
+  max-width: 800px; /* Stops it from becoming distorted on massive screens */
+  height: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adds a subtle drop shadow so the pages pop off the dark background */
+}
