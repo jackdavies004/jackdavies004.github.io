@@ -1,4 +1,3 @@
-/* Base Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,12 +9,12 @@ body {
   line-height: 1.6;
   color: #f0f0f0;
   background-color: #16084d;
-  max-width: 1500px; /* THIS OPENS UP THE MARGINS */
+  max-width: 1650px; 
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Navigation */
+
 nav {
   padding: 30px 0;
   border-bottom: 1px solid #eaeaea;
@@ -27,7 +26,7 @@ nav {
   color: #eeeeee;
   font-weight: 500;
   margin-right: 25px;
-  font-size: 1.1rem;
+  font-size: 1.2rem; 
   transition: color 0.2s ease;
 }
 
@@ -40,26 +39,26 @@ nav {
   font-weight: 700;
 }
 
-/* Typography & Layout */
+
 main {
   padding-bottom: 50px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; 
   color: #f0f0f0;
   margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem; 
   color: #f0f0f0;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.6rem; 
   color: #f0f0f0;
   margin-bottom: 15px;
   border-bottom: 2px solid #f0f0f0;
@@ -67,12 +66,13 @@ h3 {
   padding-bottom: 5px;
 }
 
-p {
+p, li {
   margin-bottom: 15px;
-  font-size: 1.1rem;
+  font-size: 1.25rem; 
+  line-height: 1.7;   
 }
 
-/* Specific Sections */
+
 .cv-section {
   margin-bottom: 40px;
 }
@@ -82,7 +82,7 @@ p {
 }
 
 .cv-item h4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem; 
   color: #f0f0f0;
 }
 
@@ -98,7 +98,6 @@ p {
 
 .contact-list li {
   margin-bottom: 10px;
-  font-size: 1.1rem;
 }
 
 a {
@@ -110,7 +109,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* --- CV Page Specific Styles --- */
 
 .cv-download-section {
   text-align: center;
@@ -120,7 +118,7 @@ a:hover {
 .download-btn {
   display: inline-block;
   background-color: #f0f0f0;
-  color: #16084d; /* Matches your dark blue background for contrast */
+  color: #16084d; 
   padding: 12px 24px;
   text-decoration: none;
   font-weight: bold;
@@ -138,16 +136,17 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px; /* This creates the perfect gap between the two pages */
+  gap: 30px; 
 }
 
 .cv-image {
   width: 100%;
-  max-width: 800px; /* Stops it from becoming distorted on massive screens */
+  max-width: 800px; 
   height: auto;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adds a subtle drop shadow so the pages pop off the dark background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
 }
-/* --- 3-Column Magazine Layout --- */
+
+
 
 .three-column-layout {
   display: flex;
@@ -157,7 +156,6 @@ a:hover {
   margin-top: 30px;
 }
 
-/* The Image Margins */
 .image-column {
   display: flex;
   flex-direction: column;
@@ -166,32 +164,31 @@ a:hover {
   gap: 30px; 
 }
 
-/* Pushes the left pictures to the far left */
+
 .image-column:first-child {
   align-items: flex-start;
 }
 
-/* Pushes the right pictures to the far right */
+
 .image-column:last-child {
   align-items: flex-end;
 }
 
-/* The Middle Text */
+
 .text-column {
   flex: 2; 
-  padding: 0 50px; /* Pushes the text nicely away from the images */
+  padding: 0 40px; 
 }
 
-/* The Images themselves */
 .side-img {
   width: 100%;
-  max-width: 350px; /* MASSIVE INCREASE: Allows them to truly fill the new space */
+  max-width: 450px; 
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
 }
 
-/* Mobile Protection */
+
 @media (max-width: 800px) {
   .three-column-layout {
     flex-direction: column;
@@ -211,24 +208,24 @@ a:hover {
   }
 
   .text-column {
-    padding: 0; /* Removes the extra padding on small phones */
+    padding: 0; 
   }
 
   .side-img {
-    max-width: 200px;
+    max-width: 250px;
   }
+} 
 
-/* --- Projects Section --- */
 
 .projects-section {
   margin-top: 70px;
   padding-top: 40px;
-  border-top: 1px solid #332266; /* Adds a subtle divider line below your about me */
+  border-top: 1px solid #332266; 
 }
 
 .section-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.2rem; 
   color: #ffffff;
   margin-bottom: 40px;
   border-bottom: none;
@@ -236,13 +233,13 @@ a:hover {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr; /* This forces the cards to stack neatly in a single column */
+  grid-template-columns: 1fr; 
   gap: 25px;
   margin-bottom: 40px;
 }
 
 .project-card {
-  background-color: #231265; /* A slightly lighter blue than your background to make them pop */
+  background-color: #231265; 
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
@@ -250,19 +247,17 @@ a:hover {
 }
 
 .project-card:hover {
-  transform: translateY(-5px); /* Makes the card "float" up slightly when a mouse hovers over it */
+  transform: translateY(-5px); 
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
 }
 
 .project-card h4 {
-  color: #66aaff; /* A light blue to draw the eye to the project title */
+  color: #66aaff; 
   margin-bottom: 15px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .project-card p {
-  font-size: 1rem;
+  font-size: 1.15rem;
   margin-bottom: 0;
-}
-  
 }
