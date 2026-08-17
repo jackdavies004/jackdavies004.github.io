@@ -51,14 +51,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem; 
+  font-size: 2.2rem; 
   color: #f0f0f0;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
 h3 {
-  font-size: 1.6rem; 
+  font-size: 2rem; 
   color: #f0f0f0;
   margin-bottom: 15px;
   border-bottom: 2px solid #f0f0f0;
@@ -68,7 +68,7 @@ h3 {
 
 p, li {
   margin-bottom: 15px;
-  font-size: 1.25rem; 
+  font-size: 1.5rem; 
   line-height: 1.7;   
 }
 
