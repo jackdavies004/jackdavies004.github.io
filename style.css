@@ -92,16 +92,21 @@ h1, h2, h3 {
 /* --- Horizontal Image Gallery --- */
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 images side-by-side on desktop */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 2rem;
   margin-bottom: 5rem;
+  align-items: center; /* Vertically centers the landscape image */
 }
 
 .gallery-img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  aspect-ratio: 3/4; /* Keeps images beautifully proportioned */
+  aspect-ratio: 3/4; 
+}
+
+.landscape-img {
+  aspect-ratio: auto; /* Removes the portrait constraint */
 }
 
 /* --- Projects Section --- */
