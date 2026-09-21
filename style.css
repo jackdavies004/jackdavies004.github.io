@@ -6,16 +6,16 @@
 }
 
 body {
-  background-color: #ffffff; /* Crisp white background */
+  background-color: #ffffff;
   color: #1a1a1a;
   font-family: 'Inter', sans-serif;
-  line-height: 1.6;
+  line-height: 1.8; /* Increased for editorial readability */
 }
 
 h1, h2, h3 {
-  font-family: 'Playfair Display', serif; /* Elegant, editorial font */
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /* --- The Black Sticky Banner --- */
@@ -25,117 +25,108 @@ h1, h2, h3 {
   width: 100%;
   background-color: #000000;
   padding: 1.2rem 2rem;
-  z-index: 1000; /* Keeps it above scrolling content */
+  z-index: 1000;
   display: flex;
   justify-content: center;
-  transition: transform 0.3s ease;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .nav-links a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   transition: opacity 0.3s ease;
 }
 
-.nav-links a:hover {
-  opacity: 0.6;
-}
-
-.nav-links a.active {
-  border-bottom: 1px solid #ffffff;
-  padding-bottom: 2px;
-}
-
-.nav-links a.highlight-link {
-  color: #4CAF50; /* Green accent for the game */
-}
+.nav-links a:hover { opacity: 0.6; }
+.nav-links a.active { border-bottom: 1px solid #ffffff; padding-bottom: 4px; }
+.nav-links a.highlight-link { color: #87d092; }
 
 /* --- Editorial Layout --- */
 .editorial-container {
-  max-width: 1200px;
+  max-width: 1400px; /* Wider overall container */
   margin: 0 auto;
   padding: 4rem 2rem;
 }
 
 .hero {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .hero h1 {
   font-size: 3.5rem;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.5rem;
 }
 
 .hero .subtitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #666;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
-/* --- Staggered Grid for Images and Text --- */
-.content-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
+/* --- Wide Text Blocks (Desktop) --- */
+.wide-text-section {
+  max-width: 1000px; /* Allows text to stretch comfortably on desktop */
+  margin: 0 auto 5rem auto; /* Centers the text block in the page */
+  color: #444;
 }
 
-.text-block {
-  padding: 2rem 0;
-}
-
-.text-block p {
+.wide-text-section p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
-  color: #333;
 }
 
 .mt-large {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
-/* --- Portrait Images --- */
-.image-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+/* --- Horizontal Image Gallery --- */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images side-by-side on desktop */
+  gap: 2rem;
+  margin-bottom: 5rem;
 }
 
-.portrait-img {
+.gallery-img {
   width: 100%;
-  max-width: 450px;
   height: auto;
   object-fit: cover;
-  aspect-ratio: 3/4; /* Forces elegant portrait proportions */
+  aspect-ratio: 3/4; /* Keeps images beautifully proportioned */
 }
 
 /* --- Projects Section --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns for projects on desktop */
+  gap: 3rem;
+}
+
 .project-item {
-  margin-bottom: 3rem;
-  border-bottom: 1px solid #eaeaea;
-  padding-bottom: 2rem;
+  border-top: 1px solid #eaeaea;
+  padding-top: 2rem;
 }
 
 .project-item h3 {
   font-size: 1.5rem;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .action-link {
   display: inline-block;
   margin-top: 1rem;
-  color: #000000;
+  color: #000;
   text-decoration: none;
   border-bottom: 1px solid #000;
   text-transform: uppercase;
@@ -144,24 +135,19 @@ h1, h2, h3 {
   transition: opacity 0.3s;
 }
 
-.action-link:hover {
-  opacity: 0.5;
-}
+.action-link:hover { opacity: 0.5; }
 
 /* --- Mobile Responsiveness --- */
-@media (max-width: 768px) {
-  .content-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+@media (max-width: 900px) {
+  .image-gallery {
+    grid-template-columns: 1fr; /* Stacks images vertically on mobile */
+    gap: 1.5rem;
   }
   
-  .hero h1 {
-    font-size: 2.5rem;
+  .projects-grid {
+    grid-template-columns: 1fr; /* Stacks projects vertically on mobile */
   }
   
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
+  .hero h1 { font-size: 2.8rem; }
+  .nav-links { flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
 }
