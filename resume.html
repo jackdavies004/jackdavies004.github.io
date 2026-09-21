@@ -3,36 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jack | CV</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Jack Davies | CV</title>
+  <!-- Google Fonts for an editorial, high-end look -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
-  <nav>
+  
+  <!-- Black Sticky Banner -->
+  <nav class="top-banner">
     <div class="nav-links">
       <a href="index.html">Homepage</a>
       <a href="resume.html" class="active">CV</a>
       <a href="contact.html">Contact</a>
-      
+      <a href="atc-game-web/index.html" class="highlight-link" target="_blank">Play My ATC Game</a>
     </div>
   </nav>
 
-  
-  <main>
-  <h1>My CV</h1>
-  
-  <section class="content">
-    <div class="cv-download-section">
-  <p>Feel free to view my CV below, or download a copy for your records.</p>
-  <!-- Updated to your new 02-08-2026 PDF name -->
-  <a href="Jack-Davies-CV-17-08-2026.pdf" download class="download-btn">Download Full CV (PDF)</a>
-</div>
+  <main class="editorial-container">
+    
+    <!-- Hero Section -->
+    <header class="hero">
+      <h1>Curriculum Vitae</h1>
+      <p class="subtitle">Experience & Qualifications</p>
+    </header>
 
-<div class="cv-images-container">
-  <!-- Updated to use underscores exactly as saved in your folder -->
-  <img src="JD_CV_IMAGE1.jpg" alt="Jack Davies CV Page 1" class="cv-image">
-  <img src="JD_CV_IMAGE2.jpg" alt="Jack Davies CV Page 2" class="cv-image">
-</div>
-  </section>
-</main>
+    <!-- Download Section -->
+    <section class="wide-text-section" style="text-align: center; margin-bottom: 3rem;">
+      <p>Feel free to view my CV below, or download a high-resolution copy for your records.</p>
+      <a href="Jack-Davies-CV-17-08-2026.pdf" download class="action-link" style="font-weight: 600; font-size: 1rem;">Download Full CV (PDF)</a>
+    </section>
+
+    <!-- CV Images -->
+    <section class="wide-text-section" style="display: flex; flex-direction: column; align-items: center; gap: 3rem; margin-bottom: 0;">
+      <!-- Added borders and shadows to make the documents pop -->
+      <img src="JD_CV_IMAGE1.jpg" alt="Jack Davies CV Page 1" style="width: 100%; max-width: 850px; border: 1px solid #eaeaea; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+      <img src="JD_CV_IMAGE2.jpg" alt="Jack Davies CV Page 2" style="width: 100%; max-width: 850px; border: 1px solid #eaeaea; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+    </section>
+
+  </main>
 </body>
 </html>
