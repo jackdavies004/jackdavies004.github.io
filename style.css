@@ -212,7 +212,7 @@ h2 {
 }
 
 .app-store-badge {
-  width: 180px; /* Exact same width as the app icon */
+  width: 220px; /* Exact same width as the app icon */
   height: auto;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
