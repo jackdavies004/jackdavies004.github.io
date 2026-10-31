@@ -165,3 +165,41 @@ h2 {
     font-size: 1.1rem; 
   }
 }
+
+/* --- Game Promo Section --- */
+.game-promo-section {
+  text-align: center;
+  max-width: 650px;
+  margin: 4rem auto 8rem auto;
+}
+
+.app-icon {
+  width: 160px;
+  height: 160px;
+  border-radius: 22.5%; /* Standard Apple icon rounding ratio */
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  margin-bottom: 2.5rem;
+}
+
+.game-promo-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.game-promo-section p {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.app-store-badge {
+  height: 50px;
+  width: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.app-store-badge:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
