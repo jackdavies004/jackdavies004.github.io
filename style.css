@@ -168,38 +168,70 @@ h2 {
 
 /* --- Game Promo Section --- */
 .game-promo-section {
-  text-align: center;
-  max-width: 650px;
+  max-width: 900px;
   margin: 4rem auto 8rem auto;
 }
 
-.app-icon {
-  width: 160px;
-  height: 160px;
-  border-radius: 22.5%; /* Standard Apple icon rounding ratio */
-  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-  margin-bottom: 2.5rem;
-}
-
 .game-promo-section h2 {
-  font-size: 2.8rem;
-  margin-bottom: 1.5rem;
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
-.game-promo-section p {
-  font-size: 1.25rem;
-  color: #555;
-  margin-bottom: 3rem;
+/* Two-column layout */
+.game-promo-content {
+  display: flex;
+  align-items: center; /* Vertically centers the text with the images */
+  gap: 5rem;
+  justify-content: space-between;
+}
+
+.game-promo-text {
+  flex: 1; /* Takes up the remaining left-side space */
+}
+
+.game-promo-text p {
+  font-size: 1.5rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* Right side stacking */
+.game-promo-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* Space between app icon and badge */
+}
+
+.app-icon {
+  width: 180px; 
+  height: 180px;
+  border-radius: 22.5%;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
 }
 
 .app-store-badge {
-  height: 50px;
-  width: auto;
+  width: 180px; /* Exact same width as the app icon */
+  height: auto;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .app-store-badge:hover {
   transform: translateY(-2px);
   opacity: 0.85;
+}
+
+/* Mobile Responsiveness (Stacks them on small screens) */
+@media (max-width: 768px) {
+  .game-promo-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .game-promo-section h2 {
+    font-size: 2.4rem;
+  }
 }
 
